@@ -33,12 +33,16 @@ def calcularEdad(anioNacimiento):
     return edad        
         
 def encontrarMayor(valor1, valor2, valor3):
+
     mayorActual = valor1
+
     if valor2 > mayorActual:
         mayorActual = valor2
+        
     if valor3 > mayorActual:
         mayorActual = valor3
-    
+        
+
     return mayorActual
     
 def encontrarMenor(valor1, valor2, valor3, valor4):
