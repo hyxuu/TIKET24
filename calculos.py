@@ -23,6 +23,24 @@ def determinarResultadosIMC(imc):
     else:
         return "IMC fuera de rango"
 
+from datetime import datetime
+def calcularEdad(anioNacimiento):
+    
+    anioActual = datetime.now().year
+    if anioNacimiento < 0 or anioNacimiento > anioActual:
+        return -1  
+    edad = anioActual - anioNacimiento
+    return edad        
+        
+def encontrarMayor(valor1, valor2, valor3):
+    mayorActual = valor1
+    if valor2 > mayorActual:
+        mayorActual = valor2
+    if valor3 > mayorActual:
+        mayorActual = valor3
+    
+    return mayorActual
+    
 def encontrarMenor(valor1, valor2, valor3, valor4):
     menorActual = valor1
     if valor2 < menorActual:
