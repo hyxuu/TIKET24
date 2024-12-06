@@ -55,3 +55,16 @@ def encontrarMenor(valor1, valor2, valor3, valor4):
         menorActual = valor4
     
     return menorActual
+
+
+
+import datetime 
+
+def calcularEdad (edad):
+    momento=datetime.datetime.now().year
+    if edad >=0 and edad <=momento:
+        act=momento-edad
+        return act 
+    else:
+        return -1
+    
